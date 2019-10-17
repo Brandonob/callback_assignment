@@ -80,3 +80,14 @@ const shouldIBuyThis = (balance, callback) => {
     }
 
     console.log(shouldIBuyThis(12, liberalSpender))
+
+//Question 6
+// part a
+
+const forEachElem = (arr, callback) => {
+    for (let i = 0; i < arr.length; i++){
+        callback(arr[i])
+    }
+    return arr
+}
+console.log(forEachElem([1, 2, 3], (num) => "$" + num))
